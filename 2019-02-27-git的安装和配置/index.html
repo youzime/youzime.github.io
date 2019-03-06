@@ -386,7 +386,7 @@
 <li>在github官网注册好自己的账号</li>
 <li><a href="https://git-for-windows.github.io" target="_blank" rel="noopener">下载</a>对应版本安装好<br> 安装好后找到Git Bash，会有一个命令行窗口就表示安装成功了 <a id="more"></a>  </li>
 <li><p>配置，在命令行中</p>
- <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.name <span class="string">"xxxx"</span> </span><br><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"xxxx@xx.com"</span></span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;xxxx&quot; </span><br><span class="line">$ git config --global user.email &quot;xxxx@xx.com&quot;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>通过ssh key链接github</p>
 <ul>
@@ -399,7 +399,7 @@
 </ol>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
 <li><p>连接超时<br>在<code>.ssh/config</code>中添加文件</p>
-  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com </span><br><span class="line">User liu_liufang@163.com</span><br><span class="line">Hostname ssh.github.com </span><br><span class="line">PreferredAuthentications publickey </span><br><span class="line">IdentityFile ~/.ssh/id_rsa </span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Host github.com </span><br><span class="line">User liu_liufang@163.com</span><br><span class="line">Hostname ssh.github.com </span><br><span class="line">PreferredAuthentications publickey </span><br><span class="line">IdentityFile ~/.ssh/id_rsa </span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>ssh-keygen…To many arguments<br>  中间均为英文状态下的短横线：<br>  <code>ssh-keygen-t -t rsa -C</code></p>
 </li>
